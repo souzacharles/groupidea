@@ -40,11 +40,11 @@
     
     <item>
       <title>Testes Charles 1</title>
-      <link>/post/2021-04-27-deflacionamento/</link>
+      <link>/post/deflacionamento/</link>
       <pubDate>Thu, 01 Apr 2021 21:13:14 -0500</pubDate>
-      <guid>/post/2021-04-27-deflacionamento/</guid>
+      <guid>/post/deflacionamento/</guid>
       <description>
-&lt;script src=&#34;/post/2021-04-27-deflacionamento/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/post/deflacionamento/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;r-markdown-deflacionamento&#34; class=&#34;section level1&#34;&gt;
@@ -80,7 +80,7 @@ pie(
   init.angle = -50, border = NA
 )&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2021-04-27-deflacionamento/index.en_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;/post/deflacionamento/index.en_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figura 1: A fancy pie chart.
 &lt;/p&gt;
@@ -153,11 +153,11 @@ Figure 1: A fancy pie chart.
     
     <item>
       <title>teste 3</title>
-      <link>/post/2020-12-01-r-rmarkdown-copia/</link>
+      <link>/post/pib/</link>
       <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>/post/2020-12-01-r-rmarkdown-copia/</guid>
+      <guid>/post/pib/</guid>
       <description>
-&lt;script src=&#34;/post/2020-12-01-r-rmarkdown-copia/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/post/pib/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;r-markdown-teste-3&#34; class=&#34;section level1&#34;&gt;
@@ -193,7 +193,7 @@ pie(
   init.angle = -50, border = NA
 )&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2020-12-01-r-rmarkdown-copia/index_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;/post/pib/index_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: A fancy pie chart.
 &lt;/p&gt;
