@@ -1,16 +1,411 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Últimas Notícias | IDEA</title>
+    <title>Postagens | IDEA</title>
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    <description>Últimas Notícias</description>
+    <description>Postagens</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>pt</language><copyright>© Grupo de Estudos IDEA</copyright><lastBuildDate>Tue, 27 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huf08263858b5ff4e6c3d8480bf5990291_33266_512x512_fill_lanczos_center_2.png</url>
-      <title>Últimas Notícias</title>
+      <title>Postagens</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Inflação (teste)</title>
+      <link>/post/2021-04-27-deflacionamento/</link>
+      <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>/post/2021-04-27-deflacionamento/</guid>
+      <description>
+&lt;script src=&#34;/post/2021-04-27-deflacionamento/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/post/2021-04-27-deflacionamento/index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/post/2021-04-27-deflacionamento/index_files/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/post/2021-04-27-deflacionamento/index_files/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/post/2021-04-27-deflacionamento/index_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/post/2021-04-27-deflacionamento/index_files/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/post/2021-04-27-deflacionamento/index_files/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/post/2021-04-27-deflacionamento/index_files/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/post/2021-04-27-deflacionamento/index_files/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;/p&gt;
+&lt;div id=&#34;introdução&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Introdução&lt;/h1&gt;
+&lt;p&gt;Textos de referência Vasconcellos e Garcia &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Vasconcellos2018&#34; role=&#34;doc-biblioref&#34;&gt;2018, p. 221, 302–314&lt;/a&gt;)&lt;/span&gt;; Lopes et al. &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Lopes2018&#34; role=&#34;doc-biblioref&#34;&gt;2018, p. 11–13, 56&lt;/a&gt;)&lt;/span&gt;; Lopes et al. &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Lopes2008&#34; role=&#34;doc-biblioref&#34;&gt;2008, p. 294–306&lt;/a&gt;)&lt;/span&gt; e Mankiw &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Mankiw2010&#34; role=&#34;doc-biblioref&#34;&gt;2010, p. 25–28, 301–303&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;O presente arquivo trata dos principais tópicos abordados na disciplina &lt;span style=&#34;     color: #5d8aa8 !important;&#34;&gt;&lt;strong&gt;Princípios de Economia – GED-72/2020&lt;/strong&gt;&lt;/span&gt;. Em especial, objetiva-se reforçar os preceitos e conceitos da &lt;span style=&#34;     color: #5d8aa8 !important;&#34;&gt;&lt;strong&gt;Ciência Macroeconômica&lt;/strong&gt;&lt;/span&gt; apresentados em sala de aula (ou em videoaulas).&lt;/p&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+
+body {text-align: justify},
+td {
+   font-size: 15px;
+}
+code.r{
+  font-size: 12px;
+}
+pre {
+  font-size: 12px
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: 25px;
+}
+h2,h3,h4,h5,h6{
+  font-size: 20px;
+}
+h3,h4,h5,h6{
+  font-size: 18px;
+}
+
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    border-left: 5px solid #ffd700;
+}
+
+
+&lt;/style&gt;
+&lt;p&gt;O objetivo deste &lt;span style=&#34;     color: #5d8aa8 !important;&#34;&gt;&lt;strong&gt;resumo&lt;/strong&gt;&lt;/span&gt; é apresentar conceitos básicos sobre inflação e evidenciar os principais índices de preços empregados no Brasil. &lt;!-- e, ademais,  demonstrar  algumas técnicas para deflacionar séries temporais. Para esse fim, utilizar-se-á o programa Excel da Microsoft e, principalmente, o \textit{software} estatístico \href{https://www.r-project.org/}{\faRProject}.\footnote{O conteúdo prático tem como objetivo consolidar os conceitos teóricos sobre inflação, não haverá questões sobre os \textit{softwares} na avaliação de macroeconomia.}--&gt;&lt;/p&gt;
+&lt;p&gt;O que é inflação? De modo resumido, a inflação é o processo de crescimento &lt;span style=&#34;     color: #5d8aa8 !important;&#34;&gt;&lt;strong&gt;contínuo&lt;/strong&gt;&lt;/span&gt; e &lt;span style=&#34;     color: #5d8aa8 !important;&#34;&gt;&lt;strong&gt;generalizado&lt;/strong&gt;&lt;/span&gt; dos preços numa economia. A taxa de inflação é um indicador do aumento percentual do nível geral de preços.&lt;/p&gt;
+
+&lt;div class=&#34;corollary&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;cor:unnamed-chunk-2&#34; class=&#34;corollary&#34;&gt;&lt;strong&gt;Equação 1  (Taxa de Inflação)  &lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\frac{I-I_{-1}}{I_{-1}}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;br /&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\textrm{I} = \textrm{Índice Geral de Preços}\)&lt;/span&gt;&lt;/p&gt;
+&lt;/font&gt;
+&lt;/div&gt;
+&lt;p&gt;A Figura &lt;a href=&#34;#fig:ipcaindice&#34;&gt;1&lt;/a&gt; mostra o número-índice, a varição mensal e a variação anual da inflação no Brasil entre 2010 e início de 2021 — Tabela n.º 1737 do Sistema IBGE de Recuperação Automática &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-sidra2021&#34; role=&#34;doc-biblioref&#34;&gt;SIDRA, 2021&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:ipcaindice&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/post/2021-04-27-deflacionamento/index_files/figure-html/ipcaindice-1.png&#34; alt=&#34;Número Índice, variação mensal e variação anual da inflação --- 2010--2021&#34; width=&#34;864&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 1: Número Índice, variação mensal e variação anual da inflação — 2010–2021
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-3&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;ipca_subamostra.png&#34; alt=&#34;Número Índice, variação mensal e variação anual da inflação --- 2010--2021&#34; width=&#34;432&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 2: Número Índice, variação mensal e variação anual da inflação — 2010–2021
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;!---
+\begin{figure}[H]
+    \renewcommand{\figurename}{\MakeTextUppercase\footnotesize Figura }
+    \centering
+    \includegraphics[width=.91\textwidth]{content/post/2021-04-27-deflacionamento/ipca_subamostra.png}
+    %\raggedright\hspace{2.4cm}\footnotesize{}
+    \label{ipca_subamostra}
+    %\vspace*{-.3cm}
+    \caption{\protect\footnotesize Número Índice, variação mensal e variação anual da inflação --- 2010--2021}\label{}
+    % \caption{Número Índice, variação mensal e variação anual da inflação --- 2010--2021}
+\end{figure}
+---&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Quando se diz, por exemplo, que um índice como o Índice Nacional de Preços ao Consumidor Amplo (IPCA) — índice oficial do Brasil — teve uma variação mensal de 2% no mês de agosto, isto significa que
+a &lt;span style=&#34;     color: #5d8aa8 !important;&#34;&gt;&lt;strong&gt;média ponderada&lt;/strong&gt;&lt;/span&gt; dos preços que compõem o índice em referência sofreu um aumento de 2% em relação ao mês anterior, isto é, em relação a julho.&lt;/p&gt;
+&lt;p&gt;Se a variação do salário, em determinado período, for menor que o IPCA, haverá, em média, perda do poder de compra. Se a inflação e o salário têm a mesma variação, mantém-se o poder de compra. Todavia, um aumento salarial for acima do referido índice, o poder de compra aumentará.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;índices-de-preços&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Índices de preços&lt;/h1&gt;
+&lt;p&gt;Texto de referência Vasconcellos e Garcia &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Vasconcellos2018&#34; role=&#34;doc-biblioref&#34;&gt;2018, p. 198–203&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;A inflação é mensurada através de índices que ponderam os bens e serviços mais importantes para uma população e medem o crescimento dos preços. Posto de outro modo, os índices de preços são “números que agregam e representam os preços de determinada cesta de produtos. Sua variação mede, portanto, a variação média dos preços dos produtos dessa cesta. Podem se referir, por exemplo, a preços ao consumidor, preços ao produtor, custos de produção ou preços de exportação e importação. Os índices mais difundidos são os índices de preços ao consumidor, que medem a variação do custo de vida de segmentos da população (taxa de inflação ou de deflação)” (BCB, 2016).&lt;/p&gt;
+&lt;br&gt;
+
+&lt;div class=&#34;lemma&#34;&gt;
+&lt;span id=&#34;lem:unnamed-chunk-4&#34; class=&#34;lemma&#34;&gt;&lt;strong&gt;Nota 1  (Número-índice)  &lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Os números-índices têm por objetivo mensurar a evolução relativa de uma ou mais séries de dados ao longo do tempo. Ou seja, é uma medida que sintetiza, em uma expressão quantitativa, a variação média, entre duas situações, de todos os elementos de um conjunto.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;O &lt;span style=&#34;     color: #5d8aa8 !important;&#34;&gt;&lt;strong&gt;Índice Laspeyres&lt;/strong&gt;&lt;/span&gt;, por exemplo, faz parte da metodologia para o cálculo do IPCA.&lt;/p&gt;
+
+&lt;div class=&#34;corollary&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;cor:unnamed-chunk-5&#34; class=&#34;corollary&#34;&gt;&lt;strong&gt;Equação 2  (Índice Laspeyres)  &lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[\textrm{Índ. Lasp.} = \frac{\sum_{i=1}^{n}p_{t}\times q_{0}}{\sum_{i=1}^{n}p_{0}\times q_{0}}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;br /&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(p_{t} = \textrm{ preço no período t;}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(p_{0} = \textrm{ preço no período base;}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(q _{0} = \textrm{ quantidade no período base.}\)&lt;/span&gt;&lt;/p&gt;
+&lt;/font&gt;
+&lt;/div&gt;
+&lt;p&gt;O &lt;a href=&#34;https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html?=&amp;amp;t=o-que-e&#34;&gt;Índice Nacional de Preços ao Consumidor Amplo (IPCA)&lt;/a&gt;, calculado pelo IBGE, é um dos índices mais importantes da economia brasileira, pois, é utilizado pelo &lt;a href=&#34;https://www.gov.br/fazenda/pt-br/assuntos/cmn&#34;&gt;Conselho Monetário Nacional (CMN)&lt;/a&gt; como referência para o sistema de metas de inflação. Ademais, alguns títulos do &lt;a href=&#34;https://www.tesourodireto.com.br/titulos/tipos-de-tesouro.htm&#34;&gt;Tesouro Nacional&lt;/a&gt; são indexados a esse índice. Outro índice importante elaborado pela mesma instituição é o &lt;a href=&#34;https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9258-indice-nacional-de-precos-ao-consumidor.html?=&amp;amp;t=o-que-e&#34;&gt;Índice Nacional de Preços ao Consumidor (INPC)&lt;/a&gt; que mensura um conjunto de produtos e serviços consumidos pelas famílias com rendimentos de 1 a 5 salários mínimos, em que a pessoa de referência na família seja assalariada, e que resida na área urbana da região de abrangência da coleta. O INPC é comumente utilizado em dissídios salariais.&lt;/p&gt;
+&lt;p&gt;A base de ponderação dos índices de preço ao consumidor calculados pelo IBGE é obtida através de pesquisas de orçamento familiar que levantam o peso de cada produto no consumo das famílias.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-8&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;variacao.png&#34; alt=&#34;Variação mensal dos grupos do IPCA&#34; width=&#34;432&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 3: Variação mensal dos grupos do IPCA
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-9&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/post/2021-04-27-deflacionamento/index_files/figure-html/unnamed-chunk-9-1.png&#34; alt=&#34;Peso dos grupos no IPCA&#34; width=&#34;864&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 4: Peso dos grupos no IPCA
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-10&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/post/2021-04-27-deflacionamento/index_files/figure-html/unnamed-chunk-10-1.png&#34; alt=&#34;Contribuição dos Grupos do IPCA para a Inflação Mensal&#34; width=&#34;864&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 5: Contribuição dos Grupos do IPCA para a Inflação Mensal
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;A Fundação Getúlio Vargas (FGV) consolidou-se como um importante centro de elaboração de índices econômicos. &lt;a href=&#34;https://portalibre.fgv.br/indices-de-precos&#34;&gt;O Índice Geral de Preços do Mercado (IGP-M)&lt;/a&gt;, por exemplo, foi criado em 1947 e é utilizado até hoje para reajustes nos contratos de aluguéis e reajustes de aumento no valor da energia elétrica. &lt;a href=&#34;https://portalibre.fgv.br/indices-de-precos&#34;&gt;O Índice Geral de Preços – Disponibilidade Interna (IGP-DI)&lt;/a&gt; é mais antigo ainda, sua criação data de 1944 e é empregado em contratos para correção de determinados preços administrados. Além desses, a instituição calcula o &lt;a href=&#34;https://portalibre.fgv.br/estudos-e-pesquisas/indices-de-precos/ipa&#34;&gt;Índice de Preços ao Produtor Amplo (IPA)&lt;/a&gt;, o &lt;a href=&#34;https://portalibre.fgv.br/estudos-e-pesquisas/indices-de-precos/ipc&#34;&gt;Índice de Preços ao Consumidor (IPC)&lt;/a&gt;, o &lt;a href=&#34;https://portalibre.fgv.br/estudos-e-pesquisas/indices-de-precos/incc&#34;&gt;Índice Nacional de Custo da Construção (INCC)&lt;/a&gt;, entre outros.&lt;/p&gt;
+
+&lt;div class=&#34;corollary&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;cor:unnamed-chunk-11&#34; class=&#34;corollary&#34;&gt;&lt;strong&gt;Equação 3  (IGP-10, IGP-M e IGP-DI)  &lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[IGP_{i,t}=0,6\times IPA_{i,t}+0,3\times IPC_{i,t}+0,1 \times INCC_{i,t}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;&lt;br /&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\textrm{Onde } i \textrm{ pode ser 10, M ou DI.}\)&lt;/span&gt;&lt;/p&gt;
+&lt;/font&gt;
+&lt;/div&gt;
+&lt;p&gt;A Figura &lt;a href=&#34;#fig:indicesgerais&#34;&gt;6&lt;/a&gt; demonstra a variação percentual dos principais índices da Fundação Getúlio Vargas entre 2010 e início de 2021.&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:indicesgerais&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/post/2021-04-27-deflacionamento/index_files/figure-html/indicesgerais-1.png&#34; alt=&#34;Variação percentual dos principais índices da FGV --- 2010--2021&#34; width=&#34;864&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 6: Variação percentual dos principais índices da FGV — 2010–2021
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;A Figura &lt;a href=&#34;#fig:ipcaigpm&#34;&gt;7&lt;/a&gt; mostra a taxa de varição anual do IGP-M e do IPCA entre 2010 e início de 2021.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:ipcaigpm&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/post/2021-04-27-deflacionamento/index_files/figure-html/ipcaigpm-1.png&#34; alt=&#34;IPCA $vs$ IGP-M&#34; width=&#34;864&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 7: IPCA &lt;span class=&#34;math inline&#34;&gt;\(vs\)&lt;/span&gt; IGP-M
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;A Tabela &lt;a href=&#34;#tab:tabelaindice&#34;&gt;1&lt;/a&gt; traz um resumo com os principais índices empregados no país.&lt;/p&gt;
+&lt;table&gt;
+&lt;caption&gt;
+&lt;span id=&#34;tab:tabelaindice&#34;&gt;Tabela 1: &lt;/span&gt;Exemplos de Índices de Preços Produzidos no Brasil
+&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Instituto
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Índice de Preços
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IBGE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IPCA (Índice Nacional de Preços ao Consumidor Amplo)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IBGE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+INPC (Índice Nacional de Preços ao Consumidor)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IBGE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IPP (Índice de Preços ao Produtor)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IBGE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SINAPI (Sistema Nacional de Pesquisa de Custos e Índices da Construção Civil)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ibre-FGV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IGP-M, IGP-DI e IGP-10
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ibre-FGV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Índice de Preços Pagos pelos Produtores Rurais (IPP)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ibre-FGV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IPC-3i (Índice de Preços ao Consumidor da Terceira Idade)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+FIPE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IPC-Fipe
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+FIPE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Fipe-Zap
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Dieese
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Cesta Básica Nacional
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Sinduscon
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Custo Unitário Básico (CUB) da construção civil do estado de São Paulo
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;deflacionamento&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Deflacionamento&lt;/h1&gt;
+&lt;p&gt;Texto de referência Vasconcellos e Garcia &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Vasconcellos2018&#34; role=&#34;doc-biblioref&#34;&gt;2018, p. 188–193&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Estudos que envolvem comparações intertemporais de preços requer que os mesmos sejam corrigidos do efeito da &lt;a href=&#34;https://www.ibge.gov.br/explica/inflacao.php&#34;&gt;inflação&lt;/a&gt;. O método é conhecido como transformação dos valores nominais em reais. Esse ajuste permite avaliar se a valorização nominal verificada no preço de produto corresponde a uma valorização real, vis-à-vis a inflação no período considerado.
+&lt;!--\footnote{Cf. a  \href{https://www3.bcb.gov.br/CALCIDADAO/publico/exibirFormCorrecaoValores.do?method=exibirFormCorrecaoValores&amp;aba=1}{Calculadora do Cidadão do Banco Central}, para conversões pontuais.}--&gt;&lt;/p&gt;
+
+&lt;div class=&#34;corollary&#34;&gt;
+&lt;p&gt;&lt;span id=&#34;cor:unnamed-chunk-15&#34; class=&#34;corollary&#34;&gt;&lt;strong&gt;Equação 4  (Fórmula básica para o deflacionamento)  &lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+ P_{i:j} = \left(\frac{I_{j}}{I_{i}}\right)\times P_{i}\label{defla}
+ \end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(P_{i:j} = \textrm{preço real do produto do período } i \textrm{ em valor do período } j;\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(P_i = \textrm{preço nominal do produto no período } i;\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(I_i = \textrm{Índice de preço no período } i, \textrm{ e}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(I_j = \textrm{Índice de preço no período } j.\)&lt;/span&gt;&lt;/p&gt;
+&lt;/font&gt;
+&lt;/div&gt;
+&lt;p&gt;A função mostra que preço real do produto é igual à relação entre os índices de preços nos períodos &lt;em&gt;j:i&lt;/em&gt; multiplicado pelo preço nominal.&lt;/p&gt;
+&lt;p&gt;A Figura &lt;a href=&#34;#fig:deflacionamento&#34;&gt;8&lt;/a&gt; evidencia o PIB do Brasil em valores nominais e reais.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:deflacionamento&#34;&gt;&lt;/span&gt;
+&lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;plotly html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&gt;{&#34;x&#34;:{&#34;data&#34;:[{&#34;x&#34;:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],&#34;y&#34;:[854763,952089,1002351,1087711,1199093,1315756,1488788,1717951,1957750,2170584,2409450,2720263,3109803,3333039,3885847,4376382,4814761,5331619,5778953,5995788,6269329,6585478,7004141,7407023,7447858],&#34;text&#34;:[&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 1996 &lt;br /&gt;Valor:  854763&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 1997 &lt;br /&gt;Valor:  952089&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 1998 &lt;br /&gt;Valor: 1002351&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 1999 &lt;br /&gt;Valor: 1087711&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2000 &lt;br /&gt;Valor: 1199093&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2001 &lt;br /&gt;Valor: 1315756&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2002 &lt;br /&gt;Valor: 1488788&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2003 &lt;br /&gt;Valor: 1717951&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2004 &lt;br /&gt;Valor: 1957750&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2005 &lt;br /&gt;Valor: 2170584&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2006 &lt;br /&gt;Valor: 2409450&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2007 &lt;br /&gt;Valor: 2720263&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2008 &lt;br /&gt;Valor: 3109803&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2009 &lt;br /&gt;Valor: 3333039&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2010 &lt;br /&gt;Valor: 3885847&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2011 &lt;br /&gt;Valor: 4376382&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2012 &lt;br /&gt;Valor: 4814761&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2013 &lt;br /&gt;Valor: 5331619&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2014 &lt;br /&gt;Valor: 5778953&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2015 &lt;br /&gt;Valor: 5995788&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2016 &lt;br /&gt;Valor: 6269329&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2017 &lt;br /&gt;Valor: 6585478&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2018 &lt;br /&gt;Valor: 7004141&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2019 &lt;br /&gt;Valor: 7407023&lt;br /&gt;PIB: PIB Nominal&#34;,&#34;PIB: PIB Nominal&lt;br /&gt;PIB: PIB Nominal&lt;br /&gt;Ano: 2020 &lt;br /&gt;Valor: 7447858&lt;br /&gt;PIB: PIB Nominal&#34;],&#34;type&#34;:&#34;scatter&#34;,&#34;mode&#34;:&#34;lines&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;rgba(114,47,55,1)&#34;,&#34;dash&#34;:&#34;solid&#34;},&#34;hoveron&#34;:&#34;points&#34;,&#34;name&#34;:&#34;PIB Nominal&#34;,&#34;legendgroup&#34;:&#34;PIB Nominal&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null},{&#34;x&#34;:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],&#34;y&#34;:[3486536.91952261,3690710.49210853,3822289.77306954,3807419.87050536,3960667.27941098,4036289.22077621,4058545.36514722,4284756.22276395,4537977.53676654,4760482.6396466,5123406.27349381,5537471.25704527,5977592.92318674,6141875.91190652,6761059.35114475,7149587.65395023,7431841.53855699,7770358.28452924,7915146.89232387,7420177.46822844,7299698.08491111,7448274.39092762,7635784.03429982,7741632.07059255,7447858],&#34;text&#34;:[&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 1996 &lt;br /&gt;Valor: 3486537&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 1997 &lt;br /&gt;Valor: 3690710&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 1998 &lt;br /&gt;Valor: 3822290&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 1999 &lt;br /&gt;Valor: 3807420&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2000 &lt;br /&gt;Valor: 3960667&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2001 &lt;br /&gt;Valor: 4036289&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2002 &lt;br /&gt;Valor: 4058545&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2003 &lt;br /&gt;Valor: 4284756&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2004 &lt;br /&gt;Valor: 4537978&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2005 &lt;br /&gt;Valor: 4760483&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2006 &lt;br /&gt;Valor: 5123406&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2007 &lt;br /&gt;Valor: 5537471&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2008 &lt;br /&gt;Valor: 5977593&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2009 &lt;br /&gt;Valor: 6141876&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2010 &lt;br /&gt;Valor: 6761059&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2011 &lt;br /&gt;Valor: 7149588&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2012 &lt;br /&gt;Valor: 7431842&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2013 &lt;br /&gt;Valor: 7770358&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2014 &lt;br /&gt;Valor: 7915147&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2015 &lt;br /&gt;Valor: 7420177&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2016 &lt;br /&gt;Valor: 7299698&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2017 &lt;br /&gt;Valor: 7448274&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2018 &lt;br /&gt;Valor: 7635784&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2019 &lt;br /&gt;Valor: 7741632&lt;br /&gt;PIB: PIB Real&#34;,&#34;PIB: PIB Real&lt;br /&gt;PIB: PIB Real&lt;br /&gt;Ano: 2020 &lt;br /&gt;Valor: 7447858&lt;br /&gt;PIB: PIB Real&#34;],&#34;type&#34;:&#34;scatter&#34;,&#34;mode&#34;:&#34;lines&#34;,&#34;line&#34;:{&#34;width&#34;:1.88976377952756,&#34;color&#34;:&#34;rgba(93,138,168,1)&#34;,&#34;dash&#34;:&#34;solid&#34;},&#34;hoveron&#34;:&#34;points&#34;,&#34;name&#34;:&#34;PIB Real&#34;,&#34;legendgroup&#34;:&#34;PIB Real&#34;,&#34;showlegend&#34;:true,&#34;xaxis&#34;:&#34;x&#34;,&#34;yaxis&#34;:&#34;y&#34;,&#34;hoverinfo&#34;:&#34;text&#34;,&#34;frame&#34;:null}],&#34;layout&#34;:{&#34;margin&#34;:{&#34;t&#34;:31.9402241594022,&#34;r&#34;:13.2835201328352,&#34;b&#34;:23.2461602324616,&#34;l&#34;:49.813200498132},&#34;plot_bgcolor&#34;:&#34;rgba(255,255,255,1)&#34;,&#34;paper_bgcolor&#34;:&#34;rgba(235,235,235,1)&#34;,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(0,0,0,1)&#34;,&#34;family&#34;:&#34;&#34;,&#34;size&#34;:14.6118721461187},&#34;xaxis&#34;:{&#34;domain&#34;:[0,1],&#34;automargin&#34;:true,&#34;type&#34;:&#34;linear&#34;,&#34;autorange&#34;:false,&#34;range&#34;:[0.4,25.6],&#34;tickmode&#34;:&#34;array&#34;,&#34;ticktext&#34;:[&#34;1996 &#34;,&#34;1997 &#34;,&#34;1998 &#34;,&#34;1999 &#34;,&#34;2000 &#34;,&#34;2001 &#34;,&#34;2002 &#34;,&#34;2003 &#34;,&#34;2004 &#34;,&#34;2005 &#34;,&#34;2006 &#34;,&#34;2007 &#34;,&#34;2008 &#34;,&#34;2009 &#34;,&#34;2010 &#34;,&#34;2011 &#34;,&#34;2012 &#34;,&#34;2013 &#34;,&#34;2014 &#34;,&#34;2015 &#34;,&#34;2016 &#34;,&#34;2017 &#34;,&#34;2018 &#34;,&#34;2019 &#34;,&#34;2020 &#34;],&#34;tickvals&#34;:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],&#34;categoryorder&#34;:&#34;array&#34;,&#34;categoryarray&#34;:[&#34;1996 &#34;,&#34;1997 &#34;,&#34;1998 &#34;,&#34;1999 &#34;,&#34;2000 &#34;,&#34;2001 &#34;,&#34;2002 &#34;,&#34;2003 &#34;,&#34;2004 &#34;,&#34;2005 &#34;,&#34;2006 &#34;,&#34;2007 &#34;,&#34;2008 &#34;,&#34;2009 &#34;,&#34;2010 &#34;,&#34;2011 &#34;,&#34;2012 &#34;,&#34;2013 &#34;,&#34;2014 &#34;,&#34;2015 &#34;,&#34;2016 &#34;,&#34;2017 &#34;,&#34;2018 &#34;,&#34;2019 &#34;,&#34;2020 &#34;],&#34;nticks&#34;:null,&#34;ticks&#34;:&#34;outside&#34;,&#34;tickcolor&#34;:&#34;rgba(0,0,0,1)&#34;,&#34;ticklen&#34;:-7.30593607305936,&#34;tickwidth&#34;:0.66417600664176,&#34;showticklabels&#34;:true,&#34;tickfont&#34;:{&#34;color&#34;:&#34;rgba(0,0,0,1)&#34;,&#34;family&#34;:&#34;&#34;,&#34;size&#34;:14.6118721461187},&#34;tickangle&#34;:-30,&#34;showline&#34;:true,&#34;linecolor&#34;:&#34;rgba(0,0,0,1)&#34;,&#34;linewidth&#34;:0.531340805313408,&#34;showgrid&#34;:false,&#34;gridcolor&#34;:null,&#34;gridwidth&#34;:0,&#34;zeroline&#34;:false,&#34;anchor&#34;:&#34;y&#34;,&#34;title&#34;:{&#34;text&#34;:&#34;&#34;,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(0,0,0,1)&#34;,&#34;family&#34;:&#34;&#34;,&#34;size&#34;:14.6118721461187}},&#34;hoverformat&#34;:&#34;.2f&#34;},&#34;yaxis&#34;:{&#34;domain&#34;:[0,1],&#34;automargin&#34;:true,&#34;type&#34;:&#34;linear&#34;,&#34;autorange&#34;:false,&#34;range&#34;:[501743.805383806,8268166.08694007],&#34;tickmode&#34;:&#34;array&#34;,&#34;ticktext&#34;:[2000,4000,6000,8000],&#34;tickvals&#34;:[2000000,4000000,6000000,8000000],&#34;categoryorder&#34;:&#34;array&#34;,&#34;categoryarray&#34;:[2000,4000,6000,8000],&#34;nticks&#34;:null,&#34;ticks&#34;:&#34;&#34;,&#34;tickcolor&#34;:null,&#34;ticklen&#34;:-7.30593607305936,&#34;tickwidth&#34;:0,&#34;showticklabels&#34;:true,&#34;tickfont&#34;:{&#34;color&#34;:&#34;rgba(0,0,0,1)&#34;,&#34;family&#34;:&#34;&#34;,&#34;size&#34;:14.6118721461187},&#34;tickangle&#34;:-0,&#34;showline&#34;:false,&#34;linecolor&#34;:null,&#34;linewidth&#34;:0,&#34;showgrid&#34;:true,&#34;gridcolor&#34;:&#34;rgba(201,201,201,1)&#34;,&#34;gridwidth&#34;:1.16230801162308,&#34;zeroline&#34;:false,&#34;anchor&#34;:&#34;x&#34;,&#34;title&#34;:{&#34;text&#34;:&#34;PIB (Bilhão)&#34;,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(0,0,0,1)&#34;,&#34;family&#34;:&#34;&#34;,&#34;size&#34;:14.6118721461187}},&#34;hoverformat&#34;:&#34;.2f&#34;},&#34;shapes&#34;:[{&#34;type&#34;:&#34;rect&#34;,&#34;fillcolor&#34;:null,&#34;line&#34;:{&#34;color&#34;:null,&#34;width&#34;:0,&#34;linetype&#34;:[]},&#34;yref&#34;:&#34;paper&#34;,&#34;xref&#34;:&#34;paper&#34;,&#34;x0&#34;:0,&#34;x1&#34;:1,&#34;y0&#34;:0,&#34;y1&#34;:1}],&#34;showlegend&#34;:true,&#34;legend&#34;:{&#34;bgcolor&#34;:&#34;rgba(235,235,235,1)&#34;,&#34;bordercolor&#34;:&#34;transparent&#34;,&#34;borderwidth&#34;:1.88976377952756,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(0,0,0,1)&#34;,&#34;family&#34;:&#34;&#34;,&#34;size&#34;:10.6268161062682},&#34;y&#34;:0.96751968503937},&#34;annotations&#34;:[{&#34;text&#34;:&#34;PIB&#34;,&#34;x&#34;:1.02,&#34;y&#34;:1,&#34;showarrow&#34;:false,&#34;ax&#34;:0,&#34;ay&#34;:0,&#34;font&#34;:{&#34;color&#34;:&#34;rgba(0,0,0,1)&#34;,&#34;family&#34;:&#34;&#34;,&#34;size&#34;:14.6118721461187},&#34;xref&#34;:&#34;paper&#34;,&#34;yref&#34;:&#34;paper&#34;,&#34;textangle&#34;:-0,&#34;xanchor&#34;:&#34;left&#34;,&#34;yanchor&#34;:&#34;bottom&#34;,&#34;legendTitle&#34;:true}],&#34;hovermode&#34;:&#34;closest&#34;,&#34;barmode&#34;:&#34;relative&#34;},&#34;config&#34;:{&#34;doubleClick&#34;:&#34;reset&#34;,&#34;showSendToCloud&#34;:false},&#34;source&#34;:&#34;A&#34;,&#34;attrs&#34;:{&#34;498852846b4e&#34;:{&#34;fill&#34;:{},&#34;colour&#34;:{},&#34;x&#34;:{},&#34;y&#34;:{},&#34;type&#34;:&#34;scatter&#34;}},&#34;cur_data&#34;:&#34;498852846b4e&#34;,&#34;visdat&#34;:{&#34;498852846b4e&#34;:[&#34;function (y) &#34;,&#34;x&#34;]},&#34;highlight&#34;:{&#34;on&#34;:&#34;plotly_click&#34;,&#34;persistent&#34;:false,&#34;dynamic&#34;:false,&#34;selectize&#34;:false,&#34;opacityDim&#34;:0.2,&#34;selected&#34;:{&#34;opacity&#34;:1},&#34;debounce&#34;:0},&#34;shinyEvents&#34;:[&#34;plotly_hover&#34;,&#34;plotly_click&#34;,&#34;plotly_selected&#34;,&#34;plotly_relayout&#34;,&#34;plotly_brushed&#34;,&#34;plotly_brushing&#34;,&#34;plotly_clickannotation&#34;,&#34;plotly_doubleclick&#34;,&#34;plotly_deselect&#34;,&#34;plotly_afterplot&#34;,&#34;plotly_sunburstclick&#34;],&#34;base_url&#34;:&#34;https://plot.ly&#34;},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figura 8: Produto Interno Bruto Nominal e Real
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tipos-de-inflação&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Tipos de Inflação&lt;/h1&gt;
+&lt;div id=&#34;inflação-de-custos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Inflação de custos&lt;/h2&gt;
+&lt;p&gt;A inflação de custos é resultante dos choques na oferta agregada. É o processo inflacionário gerado (ou acelerado) pela elevação dos custos de produção, especialmente das taxas de juros, de câmbio, de salários ou dos preços das importações.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;inflação-de-demanda&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Inflação de demanda&lt;/h2&gt;
+&lt;p&gt;A inflação de demanda é resultante dos choques na demanda agregada. Quando os meios de pagamento crescem além da capacidade de expansão da economia, ou antes, que a produção esteja em plena capacidade, o que impede que a maior demanda decorrente da expansão dos rendimentos seja atendida. Com isso, aumentam os preços e, por extensão, os salários e os rendimentos em geral, dando origem a uma espiral inflacionária.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;inflação-inercial&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Inflação inercial&lt;/h2&gt;
+&lt;p&gt;Quando o aumento de preços do período &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; é influenciado pelo aumento do nível geral de preços do período &lt;span class=&#34;math inline&#34;&gt;\(t_{-1}\)&lt;/span&gt;, damos o nome de inflação inercial.
+Em outras palavras, os preços sobem hoje porque subiram ontem.
+Para manter o poder de compra dos trabalhadores, os aumentos de preços são compensados por aumentos salariais e estes no que lhe concerne elevam a demanda por bens e serviços, que pressiona os preços, resultando em novos aumentos.
+Em momentos de elevada e persistente inflação, como os anos anteriores ao plano real, os reajustes de preços e salários ocorreram em intervalos de tempo cada vez menores.
+A este fenômeno, de reajuste em função da inflação do período anterior, dá-se o nome de indexação.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;estagflação&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Estagflação&lt;/h2&gt;
+&lt;p&gt;Situação na economia de um país na qual a estagnação ou o declínio do nível de produção e emprego se combinam com uma inflação acelerada. O fenômeno contraria a teoria clássica segundo a qual a inflação tenderia a declinar com o aumento do desemprego.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;deflação&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Deflação&lt;/h2&gt;
+&lt;p&gt;Quando a taxa de inflação é menor que zero damos o nome de &lt;span style=&#34;     color: #5d8aa8 !important;&#34;&gt;&lt;strong&gt;deflação&lt;/strong&gt;&lt;/span&gt;, isto é, uma taxa de inflação negativa.
+É caracterizada pela baixa oferta de moeda em relação à oferta de bens e serviços ou pela queda na demanda agregada (associada, por exemplo, a um maior índice de poupança).&lt;/p&gt;
+&lt;p&gt;A deflação pode ser tão prejudicial para economia quanto a inflação, deflações contínuas podem reduzir o nível do produto.&lt;/p&gt;
+&lt;p&gt;Considere a inflação (&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;) e a taxa de juros nominal (&lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;). A taxa de juros real (&lt;span class=&#34;math inline&#34;&gt;\(r\)&lt;/span&gt;) é dada por:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[r =i -\pi.\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Sabendo que a taxa de juros real é a taxa de juros nominal menos a taxa de inflação, quando esta for negativa verificar-se-á uma elevação da taxa de juros real, prejudicando o consumo e o investimento.&lt;/p&gt;
+&lt;p&gt;Mas… por quê?&lt;/p&gt;
+&lt;p&gt;Como visto, umas das formas de representar o produto agregado é:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ Y = C + I  + G + (X-M).\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Em tese, a taxa de juros tem influência na decisão de consumo das famílias, ou seja, as famílias podem optar por poupar parte de suas rendas para consumo futuro.
+Um dos motivos que leva uma família a tomar essa decisão é como ela será remunerada por isso. Ou seja, a remuneração da poupança está associada a formação da taxa de juros nos mercados financeiros, quando a taxa de juros se eleva as famílias têm mais incentivos para reduzir o consumo presente e aumentar a sua poupança.&lt;/p&gt;
+&lt;p&gt;Já o empresário quando decide investir, considera o valor corrente do investimento, sua expectativa de retorno e o &lt;span style=&#34;     color: #5d8aa8 !important;&#34;&gt;&lt;strong&gt;custo de oportunidade&lt;/strong&gt;&lt;/span&gt; do investimento.
+O empresário precisa mensurar, de alguma maneira, qual é o retorno que esse investimento pode lhe oferecer. Se a taxa de juros for maior que o retorno esperado do &lt;span style=&#34;     color: #5d8aa8 !important;&#34;&gt;&lt;strong&gt;investimento produtivo&lt;/strong&gt;&lt;/span&gt;, o empresário não terá incentivo para fazê-lo. Por dois motivos principais, taxas de juros elevadas encarecem o crédito no mercado, ou seja, o empréstimo para o investimento produtivo fica mais caro. O segundo motivo é que a taxa de juros elevada incentiva o investimento no mercado financeiro.&lt;/p&gt;
+&lt;br&gt;
+
+&lt;div class=&#34;lemma&#34;&gt;
+&lt;span id=&#34;lem:unnamed-chunk-19&#34; class=&#34;lemma&#34;&gt;&lt;strong&gt;Nota 2  (Custo de oportunidade)  &lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[…]“Segundo esse conceito, os custos não devem ser considerados absolutos, mas iguais a uma segunda melhor oportunidade de benefícios não aproveitada. Ou seja,
+quando a decisão para as possibilidades de utilização de A exclui a escolha de um melhor B, podem-se considerar os benefícios não aproveitados decorrentes de B como custos de oportunidade” &lt;span class=&#34;citation&#34;&gt;(SANDRONI, &lt;a href=&#34;#ref-sandroni1999&#34; role=&#34;doc-biblioref&#34;&gt;1999&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;referências&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;Referências&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references csl-bib-body&#34; entry-spacing=&#34;1&#34;&gt;
+&lt;div id=&#34;ref-Lopes2018&#34; class=&#34;csl-entry&#34;&gt;
+LOPES, Luiz Martins; BRAGA, Márcio Bobik; VASCONCELLOS, Marco Antonio Sandoval de; TONETO, Rudinei, Junior. &lt;strong&gt;Macroeconomia: &lt;span&gt;Teoria e Aplicações de Política Econômica&lt;/span&gt;&lt;/strong&gt;. 4. ed. São Paulo: Atlas, 2018.
+&lt;/div&gt;
+&lt;div id=&#34;ref-Lopes2008&#34; class=&#34;csl-entry&#34;&gt;
+LOPES, Luiz Martins; VASCONCELLOS, Marco Antonio Sandoval de; GREMAUD, Amaury Patrick; LUQUE, Carlos Antonio; MARTONE, Celso Luiz; BRAGA, Márcio Bobik; TONETO, Rudinei, Junior; PESSOA, Samuel de Abreu; SCHOR, Silvia Maria. &lt;strong&gt;&lt;span&gt;Manual de Macroeconomia&lt;/span&gt;: &lt;span&gt;Básico e Intermediário&lt;/span&gt;&lt;/strong&gt;. 3. ed. São Paulo: Atlas, 2008.
+&lt;/div&gt;
+&lt;div id=&#34;ref-Mankiw2010&#34; class=&#34;csl-entry&#34;&gt;
+MANKIW, N. Gregory. &lt;strong&gt;Macroeconomia&lt;/strong&gt;. 7. ed. Rio de Janeiro: LTC, 2010.
+&lt;/div&gt;
+&lt;div id=&#34;ref-sandroni1999&#34; class=&#34;csl-entry&#34;&gt;
+SANDRONI, Paulo. &lt;strong&gt;Nov&lt;span&gt;ı́&lt;/span&gt;ssimo dicion&lt;span&gt;á&lt;/span&gt;rio de economia&lt;/strong&gt;. São Paulo: Editora Best Seller, 1999.
+&lt;/div&gt;
+&lt;div id=&#34;ref-sidra2021&#34; class=&#34;csl-entry&#34;&gt;
+SIDRA. &lt;strong&gt;Sistema IBGE de Recupera&lt;span&gt;ç&lt;/span&gt;ão Autom&lt;span&gt;á&lt;/span&gt;tica - SIDRA&lt;/strong&gt;. Bras&lt;span&gt;í&lt;/span&gt;lia: IBGE, 2021. Disponível em: &lt;a href=&#34;https://sidra.ibge.gov.br&#34;&gt;https://sidra.ibge.gov.br&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div id=&#34;ref-Vasconcellos2018&#34; class=&#34;csl-entry&#34;&gt;
+VASCONCELLOS, Marco Antonio Sandoval; GARCIA, Manuel Enriquez. &lt;strong&gt;Fundamentos de &lt;span&gt;Economia&lt;/span&gt;&lt;/strong&gt;. 6. ed. S&lt;span&gt;ã&lt;/span&gt;o Paulo: Saraiva, 2018. p. 368
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Os pequisadores x e yz ganham o prêmio de melhor artigo na xxxx 2020</title>
